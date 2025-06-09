@@ -95,4 +95,21 @@ body {
 }
 .header__logo {
   display: none;
+}
+
+@media (width >= 768px) {
+  .header__text-heading {
+    font-size: 8rem;
+  }
+  .header__text-info {
+    font-size: 1.8rem;
+  }
+  .header__text-btn {
+    font-size: 2rem;
+  }
+}
+@media (width >= 992px) {
+  .header {
+    background-image: url(../img/header-big.jpg);
+  }
 }/*# sourceMappingURL=main.css.map */
