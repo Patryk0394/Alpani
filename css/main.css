@@ -97,6 +97,50 @@ body {
   display: none;
 }
 
+.nav {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+.nav__logo {
+  position: absolute;
+  display: inline;
+  top: 1rem;
+  left: 1rem;
+}
+.nav__logo-img {
+  width: 50px;
+}
+.nav__burger-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  padding: 2em;
+  background: none;
+  border: none;
+}
+.nav__burger-btn-bars {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: rgb(48, 94, 29);
+}
+.nav__burger-btn-bars:nth-child(2) {
+  top: 13px;
+}
+.nav__burger-btn-bars:nth-child(3) {
+  bottom: 13px;
+}
+.nav__mobile, .nav__desktop {
+  display: none;
+}
+
 @media (width >= 768px) {
   .header__text-heading {
     font-size: 8rem;
