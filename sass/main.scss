@@ -73,8 +73,10 @@ body {
 	position: fixed;
 	width: 100%;
 	z-index: 10;
-	background-color: colors.$cream-color;
-
+	transition: background-color 0.3s;
+	&--active {
+		background-color: colors.$cream-color;
+	}
 	&__mobile {
 		display: flex;
 		align-items: center;
@@ -91,6 +93,7 @@ body {
 			border: none;
 			background: none;
 			padding: 1em;
+			cursor: pointer;
 
 			&-bars {
 				position: absolute;
@@ -119,10 +122,9 @@ body {
 			top: 71px;
 			background-color: colors.$cream-color;
 			text-align: center;
-			z-index: -1;
-			border: 1px solid red;
 			transform: translateY(-140%);
-
+			transition: transform 0.4s;
+			z-index: -2;
 			&--active {
 				transform: translateY(0);
 			}
@@ -136,6 +138,7 @@ body {
 				text-transform: uppercase;
 				text-decoration: none;
 				transition: color 0.3s;
+				z-index: -10;
 				&::before {
 					position: absolute;
 					content: '';

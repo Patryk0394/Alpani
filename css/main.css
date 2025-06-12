@@ -101,6 +101,9 @@ body {
   position: fixed;
   width: 100%;
   z-index: 10;
+  transition: background-color 0.3s;
+}
+.nav--active {
   background-color: rgb(177, 176, 154);
 }
 .nav__mobile {
@@ -120,6 +123,7 @@ body {
   border: none;
   background: none;
   padding: 1em;
+  cursor: pointer;
 }
 .nav__mobile__burger-btn-bars {
   position: absolute;
@@ -146,9 +150,9 @@ body {
   top: 71px;
   background-color: rgb(177, 176, 154);
   text-align: center;
-  z-index: -1;
-  border: 1px solid red;
   transform: translateY(-140%);
+  transition: transform 0.4s;
+  z-index: -2;
 }
 .nav__mobile__links--active {
   transform: translateY(0);
@@ -163,6 +167,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.3s;
+  z-index: -10;
 }
 .nav__mobile__links-item::before {
   position: absolute;
