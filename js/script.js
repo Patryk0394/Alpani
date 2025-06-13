@@ -2,14 +2,10 @@ const nav = document.querySelector('.nav')
 const burgerNav = document.querySelector('.nav__mobile__burger-btn')
 const mobileNav = document.querySelector('.nav__mobile__links')
 
-const scrollNav = 200
+const scrollNav = 148
 
 const handleNav = () => {
 	mobileNav.classList.toggle('nav__mobile__links--active')
-
-	if (mobileNav.classList.contains('nav__mobile__links--active')) {
-		nav.classList.add('nav--active')
-	} 
 }
 
 const addedBackgroundNav = () => {
