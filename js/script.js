@@ -9,9 +9,7 @@ const handleNav = () => {
 
 	if (mobileNav.classList.contains('nav__mobile__links--active')) {
 		nav.classList.add('nav--active')
-	} else {
-		nav.classList.remove('nav--active')
-	}
+	} 
 }
 
 const addedBackgroundNav = () => {

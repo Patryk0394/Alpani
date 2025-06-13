@@ -104,7 +104,7 @@ body {
   transition: background-color 0.3s;
 }
 .nav--active {
-  background-color: rgb(177, 176, 154);
+  background-color: rgb(234, 224, 200);
 }
 .nav__mobile {
   display: flex;
@@ -115,6 +115,7 @@ body {
 }
 .nav__mobile-img {
   width: 50px;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
 }
 .nav__mobile__burger-btn {
   position: relative;
@@ -147,8 +148,8 @@ body {
   width: 100%;
   height: 190px;
   left: 0;
-  top: 71px;
-  background-color: rgb(177, 176, 154);
+  top: 0;
+  background-color: rgb(234, 224, 200);
   text-align: center;
   transform: translateY(-140%);
   transition: transform 0.4s;
