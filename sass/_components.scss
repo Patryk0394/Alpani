@@ -7,6 +7,24 @@
 	max-width: 1200px;
 }
 
+.section-padding {
+	padding: 6em 2em;
+}
+
+.section-title {
+	position: relative;
+	font-size: 3rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 2em;
+	color: colors.$main-color;
+	&--green {
+		color: colors.$white;
+		background-color: colors.$main-color;
+		padding: 0.1em;
+	}
+}
+
 .header-shadow {
 	position: absolute;
 	width: 100%;

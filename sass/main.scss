@@ -73,9 +73,10 @@ body {
 	position: fixed;
 	width: 100%;
 	z-index: 10;
-	transition: background-color 0.3s;
+	transition: background-color 0.3s, box-shadow 0.3s;
 	&--active {
-		background-color: colors.$pearl;
+		box-shadow: 1px 1px 5px colors.$light-shadow;
+		background-color: colors.$cream;
 	}
 	&__mobile {
 		display: flex;
@@ -121,8 +122,9 @@ body {
 			height: 261px;
 			left: 0;
 			top: 0;
-			background-color: colors.$pearl;
+			background-color: colors.$cream;
 			text-align: center;
+			box-shadow: 1px 1px 5px colors.$light-shadow;
 			transform: translateY(-140%);
 			transition: transform 0.4s;
 			z-index: -2;
@@ -143,14 +145,18 @@ body {
 				&:first-child {
 					margin-top: 71px;
 				}
-
-				
 			}
 		}
 	}
 	&__desktop {
 		display: none;
 	}
+}
+
+// ABOUT US
+
+.about-us {
+	background-color: colors.$cream;
 }
 
 // MEDIA
@@ -169,6 +175,7 @@ body {
 			margin: 0 auto;
 			&-img {
 				width: 60px;
+				filter: drop-shadow(1px 1px 1px colors.$light-shadow);
 			}
 			&-item {
 				position: relative;

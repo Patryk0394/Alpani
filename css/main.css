@@ -12,13 +12,31 @@
   max-width: 1200px;
 }
 
+.section-padding {
+  padding: 6em 2em;
+}
+
+.section-title {
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  color: rgb(48, 94, 29);
+}
+.section-title--green {
+  color: rgb(255, 255, 255);
+  background-color: rgb(48, 94, 29);
+  padding: 0.1em;
+}
+
 .header-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(185, 185, 185, 0.6);
+  background-color: rgba(185, 185, 185, 0.7);
   z-index: -1;
 }
 
@@ -122,10 +140,11 @@ body {
   position: fixed;
   width: 100%;
   z-index: 10;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 .nav--active {
-  background-color: rgb(234, 224, 200);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgb(220, 216, 213);
 }
 .nav__mobile {
   display: flex;
@@ -170,8 +189,9 @@ body {
   height: 261px;
   left: 0;
   top: 0;
-  background-color: rgb(234, 224, 200);
+  background-color: rgb(220, 216, 213);
   text-align: center;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   transform: translateY(-140%);
   transition: transform 0.4s;
   z-index: -2;
@@ -198,6 +218,10 @@ body {
   display: none;
 }
 
+.about-us {
+  background-color: rgb(220, 216, 213);
+}
+
 @media (width >= 768px) {
   .nav {
     padding: 1em;
@@ -215,6 +239,7 @@ body {
   }
   .nav__desktop-img {
     width: 60px;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
   }
   .nav__desktop-item {
     position: relative;
