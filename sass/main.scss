@@ -144,24 +144,7 @@ body {
 					margin-top: 71px;
 				}
 
-				&::before {
-					position: absolute;
-					content: '';
-					height: 2px;
-					width: 100%;
-					bottom: 0;
-					left: 0;
-					background-color: colors.$main-color;
-					scale: 0;
-					transition: scale 0.3s;
-				}
-
-				&:hover::before {
-					scale: 1;
-				}
-				&:hover {
-					color: colors.$main-color;
-				}
+				
 			}
 		}
 	}
@@ -172,6 +155,32 @@ body {
 
 // MEDIA
 @media (width >= 768px) {
+	.nav {
+		padding: 1em;
+		&__mobile {
+			display: none;
+		}
+		&__desktop {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			width: 100%;
+			max-width: 60%;
+			margin: 0 auto;
+			&-img {
+				width: 60px;
+			}
+			&-item {
+				position: relative;
+				padding: 1em;
+				margin: 0 0.3em;
+				color: colors.$main-color;
+				font-size: 1.4rem;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+		}
+	}
 	.header {
 		&__text {
 			&-heading {
@@ -188,6 +197,13 @@ body {
 }
 
 @media (width >= 992px) {
+	.nav {
+		&__desktop {
+			&-item {
+				font-size: 1.8rem;
+			}
+		}
+	}
 	.header {
 		background-image: url(../img/header-big.jpg);
 

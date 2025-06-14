@@ -26,3 +26,25 @@
 	animation: moveArrow 1s linear infinite;
 	cursor: pointer;
 }
+
+.nav__desktop-item,
+.nav__mobile__links-item {
+	&::before {
+		position: absolute;
+		content: '';
+		height: 2px;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		background-color: colors.$main-color;
+		scale: 0;
+		transition: scale 0.3s;
+	}
+
+	&:hover::before {
+		scale: 1;
+	}
+	&:hover {
+		color: colors.$main-color;
+	}
+}
