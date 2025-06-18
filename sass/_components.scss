@@ -25,26 +25,6 @@
 	}
 }
 
-.header-shadow {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background-color: colors.$shadow-header;
-	z-index: -1;
-}
-
-.header-arrow {
-	position: absolute;
-	bottom: 1em;
-	font-size: 3rem;
-	color: colors.$main-color;
-	text-decoration: none;
-	animation: moveArrow 1s linear infinite;
-	cursor: pointer;
-}
-
 .nav__desktop-item,
 .nav__mobile__links-item {
 	&::before {
@@ -65,4 +45,36 @@
 	&:hover {
 		color: colors.$main-color;
 	}
+}
+
+.nav__mobile__burger-btn-bars--active {
+	&:first-child {
+		opacity: 0;
+	}
+	&:nth-child(2) {
+		transform: translate(-20px, 13px) rotate(-45deg);
+	}
+	&:nth-child(3) {
+		transform: translate(-20px, -17px) rotate(45deg);
+	}
+}
+
+.header-shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: colors.$shadow-header;
+	z-index: -1;
+}
+
+.header-arrow {
+	position: absolute;
+	bottom: 1em;
+	font-size: 3rem;
+	color: colors.$main-color;
+	text-decoration: none;
+	animation: moveArrow 1s linear infinite;
+	cursor: pointer;
 }

@@ -105,6 +105,7 @@ body {
 				height: 3px;
 				background-color: colors.$main-color;
 				transform: translate(-50%, -50%);
+				transition: transform 0.3s, opacity 0.3s;
 				&:nth-child(2) {
 					top: 10px;
 				}
