@@ -92,6 +92,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scroll-padding-top: 74px;
 }
 
 body {
@@ -234,6 +235,9 @@ body {
 }
 
 @media (width >= 768px) {
+  html {
+    scroll-padding-top: 84px;
+  }
   .nav {
     padding: 1em;
   }
