@@ -159,9 +159,22 @@ body {
 
 .aboutus {
 	background-color: colors.$cream;
+	&__text {
+		font-size: 1.4rem;
+		margin: 0.5em 0;
+		padding: 0.5em;
+	}
 }
 
 // MEDIA
+
+@media (width >= 375px) {
+	.aboutus {
+		&__text {
+			font-size: 1.6rem;
+		}
+	}
+}
 @media (width >= 768px) {
 	html {
 		scroll-padding-top: 84px;
@@ -206,6 +219,11 @@ body {
 			}
 		}
 	}
+	.aboutus {
+		.section-title {
+			font-size: 4rem;
+		}
+	}
 }
 
 @media (width >= 992px) {
@@ -227,6 +245,11 @@ body {
 			justify-content: center;
 			align-items: center;
 			height: 100%;
+		}
+	}
+	.aboutus {
+		&__text {
+			font-size: 1.8rem;
 		}
 	}
 }
