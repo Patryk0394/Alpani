@@ -131,7 +131,7 @@ body {
   border-radius: 3em;
   border: 1px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.3s, background-color 0.3s, border 0.3s;
@@ -229,7 +229,7 @@ body {
   display: none;
 }
 
-.about-us {
+.aboutus {
   background-color: rgb(220, 216, 213);
 }
 
