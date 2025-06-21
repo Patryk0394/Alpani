@@ -254,22 +254,22 @@ body {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 2rem;
 }
-.aboutus-second__card-img {
+.aboutus-second__card__img-img {
   width: 100%;
   border-radius: 2rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.aboutus-second__card-text {
+.aboutus-second__card__text {
   text-align: center;
   padding: 1em;
 }
-.aboutus-second__card-title {
+.aboutus-second__card__text-title {
   margin: 0.5em 0;
   font-size: 2.2rem;
   color: rgb(48, 94, 29);
 }
-.aboutus-second__card-description {
+.aboutus-second__card__text-description {
   font-size: 1.4rem;
 }
 
