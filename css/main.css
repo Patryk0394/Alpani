@@ -130,7 +130,7 @@ body {
 }
 .header__text-btn {
   padding: 0.5em 1em;
-  border-radius: 3em;
+  border-radius: 1rem;
   border: 1px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   font-size: 1.6rem;
@@ -235,43 +235,37 @@ body {
   background-color: rgb(220, 216, 213);
 }
 .aboutus__text {
-  font-size: 1.4rem;
-  margin: 0.5em 0;
   padding: 0.5em;
+  margin: 0.5em 0;
+  font-size: 1.4rem;
 }
 
 .aboutus-second {
-  width: 100%;
   background-color: rgb(237, 232, 228);
+}
+.aboutus-second__panel {
+  margin: 2rem 0;
+  padding: 1em;
+  background-color: rgb(220, 216, 213);
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
-.aboutus-second__cards {
-  display: flex;
-  flex-direction: column;
-}
-.aboutus-second__card {
-  margin: 2em 0;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 2rem;
-}
-.aboutus-second__card__img-img {
+.aboutus-second__panel-img {
   width: 100%;
   height: 100%;
-  max-height: 400px;
-  border-radius: 2rem;
+  max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0.5rem;
 }
-.aboutus-second__card__text {
-  text-align: center;
-  padding: 1em;
-}
-.aboutus-second__card__text-title {
-  margin: 0.5em 0;
-  font-size: 2.2rem;
+.aboutus-second__panel-title {
+  margin: 1rem;
   color: rgb(48, 94, 29);
+  font-size: 2.4rem;
+  text-align: center;
 }
-.aboutus-second__card__text-description {
+.aboutus-second__panel-info {
   font-size: 1.4rem;
 }
 
@@ -283,6 +277,9 @@ body {
 @media (width >= 768px) {
   html {
     scroll-padding-top: 84px;
+  }
+  .section-title {
+    font-size: 4rem;
   }
   .nav {
     padding: 1em;
@@ -320,8 +317,27 @@ body {
   .header__text-btn {
     font-size: 2rem;
   }
-  .aboutus .section-title {
-    font-size: 4rem;
+  .aboutus-second {
+    background-color: rgb(237, 232, 228);
+  }
+  .aboutus-second__panel {
+    display: flex;
+    align-items: center;
+  }
+  .aboutus-second__panel-img {
+    width: 120%;
+  }
+  .aboutus-second__panel-img--right {
+    order: 1;
+  }
+  .aboutus-second__panel__text {
+    padding: 0 5em;
+  }
+  .aboutus-second__panel-title {
+    font-size: 3rem;
+  }
+  .aboutus-second__panel-info {
+    font-size: 1.6rem;
   }
 }
 @media (width >= 992px) {
@@ -341,6 +357,21 @@ body {
     height: 100%;
   }
   .aboutus__text {
+    font-size: 1.8rem;
+  }
+  .aboutus-second {
+    background-color: rgb(237, 232, 228);
+  }
+  .aboutus-second__panel-img {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    transition: transform 0.3s;
+  }
+  .aboutus-second__panel-img:hover {
+    transform: scale(0.95);
+  }
+  .aboutus-second__panel-info {
     font-size: 1.8rem;
   }
 }/*# sourceMappingURL=main.css.map */
