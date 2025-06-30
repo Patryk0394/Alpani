@@ -315,32 +315,23 @@ body {
   flex-direction: column;
 }
 .prices__box__card {
-  padding: 1em;
-  margin: 1em 0;
-  height: 100%;
-  min-height: 400px;
-  border-radius: 1rem;
   text-align: center;
-  background-color: rgb(237, 232, 228);
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
+  margin: 1em 0;
+  border: 1px solid rgb(48, 94, 29);
+  border-radius: 1rem;
+  padding: 2em 1em;
 }
-.prices__box__card__front-title {
-  margin-top: 2em;
-  font-size: 2rem;
-  color: rgb(48, 94, 29);
+.prices__box__card .fa-solid {
+  font-size: 3rem;
+}
+.prices__box__card-title {
+  margin: 1em 0;
+  font-size: 1.6rem;
   text-transform: uppercase;
 }
-.prices__box__card__front hr {
-  margin-top: 2em;
-}
-.prices__box__card__bottom {
-  margin-top: 3em;
-  font-size: 1.4rem;
-}
-.prices__box__card__bottom-text--price {
+.prices__box__card-price {
   font-weight: bold;
-  margin-left: auto;
+  font-size: 1.8rem;
 }
 
 @media (width >= 375px) {
