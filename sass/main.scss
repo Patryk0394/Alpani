@@ -13,7 +13,7 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	scroll-padding-top: 74px;
+	scroll-padding-top: 72px;
 }
 
 body {
@@ -172,9 +172,7 @@ body {
 	&__panel {
 		margin: 2rem 0;
 		padding: 1em;
-		background-color: colors.$cream;
 		border-radius: 1rem;
-		box-shadow: 1px 1px 5px colors.$light-shadow;
 		overflow: hidden;
 		&-img {
 			width: 100%;
@@ -245,19 +243,40 @@ body {
 		flex-direction: column;
 		&__card {
 			text-align: center;
-			margin: 1em 0;
-			border: 1px solid colors.$main-color;
+			margin: 0.5em 0;
+			box-shadow: 3px 3px 15px colors.$light-shadow;
 			border-radius: 1rem;
 			padding: 2em 1em;
+			height: 100%;
+
 			.fa-solid {
-				font-size: 3rem;
+				&-title {
+					font-size: 3rem;
+					color: colors.$main-color;
+				}
 			}
 			&-title {
 				margin: 1em 0;
+				color: colors.$main-color;
 				font-size: 1.6rem;
 				text-transform: uppercase;
 			}
+			&-info {
+				padding: 0.5em;
+				text-align: left;
+				margin: 1em 0;
+				font-size: 1.4rem;
+
+				.fa-solid {
+					font-size: 1.4rem;
+					margin-right: 0.3em;
+				}
+			}
 			&-price {
+				margin-top: auto;
+				border-top: 2px solid colors.$main-color;
+				padding: 1em 0 0 0;
+				margin: 1em 0;
 				font-weight: bold;
 				font-size: 1.8rem;
 			}

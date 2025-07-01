@@ -92,7 +92,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: 74px;
+  scroll-padding-top: 72px;
 }
 
 body {
@@ -246,9 +246,7 @@ body {
 .aboutus-second__panel {
   margin: 2rem 0;
   padding: 1em;
-  background-color: rgb(220, 216, 213);
   border-radius: 1rem;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 .aboutus-second__panel-img {
@@ -316,20 +314,37 @@ body {
 }
 .prices__box__card {
   text-align: center;
-  margin: 1em 0;
-  border: 1px solid rgb(48, 94, 29);
+  margin: 0.5em 0;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   padding: 2em 1em;
+  height: 100%;
 }
-.prices__box__card .fa-solid {
+.prices__box__card .fa-solid-title {
   font-size: 3rem;
+  color: rgb(48, 94, 29);
 }
 .prices__box__card-title {
   margin: 1em 0;
+  color: rgb(48, 94, 29);
   font-size: 1.6rem;
   text-transform: uppercase;
 }
+.prices__box__card-info {
+  padding: 0.5em;
+  text-align: left;
+  margin: 1em 0;
+  font-size: 1.4rem;
+}
+.prices__box__card-info .fa-solid {
+  font-size: 1.4rem;
+  margin-right: 0.3em;
+}
 .prices__box__card-price {
+  margin-top: auto;
+  border-top: 2px solid rgb(48, 94, 29);
+  padding: 1em 0 0 0;
+  margin: 1em 0;
   font-weight: bold;
   font-size: 1.8rem;
 }
