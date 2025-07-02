@@ -238,12 +238,19 @@ body {
 
 // PRICES
 .prices {
+	&-info {
+		font-size: 1.4rem;
+		text-align: center;
+		color: colors.$alert-color;
+		margin-bottom: 3em;
+		font-weight: bold;
+	}
 	&__box {
 		display: flex;
 		flex-direction: column;
 		&__card {
 			text-align: center;
-			margin: 0.5em 0;
+			margin: 1em 0;
 			box-shadow: 3px 3px 15px colors.$light-shadow;
 			border-radius: 1rem;
 			padding: 2em 1em;
@@ -262,19 +269,19 @@ body {
 				text-transform: uppercase;
 			}
 			&-info {
-				padding: 0.5em;
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid colors.$main-color;
+				padding: 1em 0.5em;
 				text-align: left;
 				margin: 1em 0;
 				font-size: 1.4rem;
 
 				.fa-solid {
 					font-size: 1.4rem;
-					margin-right: 0.3em;
 				}
 			}
 			&-price {
-				margin-top: auto;
-				border-top: 2px solid colors.$main-color;
 				padding: 1em 0 0 0;
 				margin: 1em 0;
 				font-weight: bold;
@@ -295,6 +302,34 @@ body {
 	.hero-img {
 		&-text {
 			font-size: 1.6rem;
+		}
+	}
+	.prices {
+		&-info {
+			font-size: 1.6rem;
+			padding: 0 1em;
+		}
+		&__box {
+			&__card {
+				.fa-solid {
+					&-title {
+						font-size: 3rem;
+					}
+				}
+				&-title {
+					font-size: 1.8rem;
+				}
+				&-info {
+					font-size: 1.6rem;
+
+					.fa-solid {
+						font-size: 1.6rem;
+					}
+				}
+				&-price {
+					font-size: 2rem;
+				}
+			}
 		}
 	}
 }
@@ -379,6 +414,39 @@ body {
 			font-size: 1.8rem;
 		}
 	}
+	.prices {
+		&-info {
+			font-size: 1.8rem;
+		}
+		&__box {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			&__card {
+				width: 45%;
+				margin: 1em;
+				height: 100%;
+				min-height: 360px;
+				.fa-solid {
+					&-title {
+						font-size: 3rem;
+					}
+				}
+				&-title {
+					font-size: 2rem;
+				}
+				&-info {
+					.fa-solid {
+						font-size: 1.8rem;
+					}
+				}
+				&-price {
+					font-size: 2.2rem;
+					margin-bottom: 1em;
+				}
+			}
+		}
+	}
 }
 
 @media (width >= 992px) {
@@ -432,6 +500,33 @@ body {
 	.hero-img {
 		&-text {
 			font-size: 2.6rem;
+		}
+	}
+	.prices {
+		&__box {
+			&__card {
+				width: 31%;
+				margin: 1em;
+				height: 100%;
+				min-height: 360px;
+				.fa-solid {
+					&-title {
+						font-size: 3rem;
+					}
+				}
+				&-title {
+					font-size: 2rem;
+				}
+				&-info {
+					.fa-solid {
+						font-size: 1.8rem;
+					}
+				}
+				&-price {
+					font-size: 2.2rem;
+					margin-bottom: 1em;
+				}
+			}
 		}
 	}
 }
