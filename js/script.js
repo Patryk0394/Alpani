@@ -28,4 +28,4 @@ const addedBackgroundNav = () => {
 burgerNav.addEventListener('click', handleNav)
 window.addEventListener('scroll', addedBackgroundNav)
 
-// burgerBars.forEach(el => el.classList.toggle('nav__mobile__burger-btn-bars--active'))
+// // burgerBars.forEach(el => el.classList.toggle('nav__mobile__burger-btn-bars--active'))
