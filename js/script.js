@@ -3,6 +3,7 @@ const burgerNav = document.querySelector('.nav__mobile__burger-btn')
 const burgerBars = document.querySelectorAll('.nav__mobile__burger-btn-bars')
 const mobileNav = document.querySelector('.nav__mobile__links')
 const navItems = document.querySelectorAll('.nav__mobile__links-item')
+const footerYear = document.querySelector('.footer-year')
 
 const scrollNav = 148
 
@@ -25,6 +26,11 @@ const addedBackgroundNav = () => {
 	}
 }
 
+const currentFooterYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
+currentFooterYear()
 burgerNav.addEventListener('click', handleNav)
 window.addEventListener('scroll', addedBackgroundNav)
 
