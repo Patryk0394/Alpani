@@ -4,6 +4,7 @@ const burgerBars = document.querySelectorAll('.nav__mobile__burger-btn-bars')
 const mobileNav = document.querySelector('.nav__mobile__links')
 const navItems = document.querySelectorAll('.nav__mobile__links-item')
 const footerYear = document.querySelector('.footer-year')
+const navMobileLogo = document.querySelector('.nav__mobile-img')
 
 const scrollNav = 148
 
