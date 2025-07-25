@@ -19,6 +19,11 @@ const handleNav = () => {
 	)
 }
 
+const closeNav = () => {
+	mobileNav.classList.remove('nav__mobile__links--active')
+	burgerBars.forEach(el => el.classList.remove('nav__mobile__burger-btn-bars--active'))
+}
+
 const addedBackgroundNav = () => {
 	if (window.scrollY > scrollNav) {
 		nav.classList.add('nav--active')
@@ -32,6 +37,8 @@ const currentFooterYear = () => {
 	footerYear.innerText = year
 }
 currentFooterYear()
+
+navMobileLogo.addEventListener('click', closeNav)
 burgerNav.addEventListener('click', handleNav)
 window.addEventListener('scroll', addedBackgroundNav)
 
